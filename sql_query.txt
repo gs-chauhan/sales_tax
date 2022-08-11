@@ -1,0 +1,6 @@
+Answer 1
+SELECT COUNT(conversation_id) AS no_of_msg, DATE_TRUNC('day',sent_time) AS day FROM chat_messages WHERE sent_time BETWEEN 2021-01-01 00:00:00.000000 AND 2021-12-31 23:59:59.999999 GROUP BY day,conversation_id
+Answer 2
+SELECT COUNT(user_id)/2 AS no_of_msg, DATE_TRUNC('day',sent_time) AS day FROM chat_messages WHERE sent_time BETWEEN 2021-01-01 00:00:00.000000 AND 2021-12-31 23:59:59.999999 GROUP BY day,conversation_id,user_id
+Answer 3
+-
